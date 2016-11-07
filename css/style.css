@@ -1,0 +1,136 @@
+
+@font-face {
+	font-family:'Miso';
+	src: url('../fonts/miso-webfont.woff2') format('woff2'),
+	url('../fonts/miso-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+@font-face {
+	font-family:'Miso Bold';
+	src: url('../fonts/miso-bold-webfont.woff2') format('woff2'),
+	url('../fonts/miso-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+html {
+	height: 100%;
+}
+html,
+body {
+	min-height: 100%;
+}
+body {
+	font: 400 14px/1.3 'Lato' , Arial, sans-serif;
+	background: #FDDE7E;
+}
+
+
+
+/* Layout */
+.ba-container{
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	max-width: 1260px;
+}
+.ba-flex__container {
+	display: flex;
+	min-height: 600px;
+	justify-content: space-around;
+	align-items: center;
+}
+[class*="ba-flex__block"]{
+	background: #FFF;
+	border-radius: 3px;
+	box-shadow: 0 4px 10px 0 #ceb567;
+	display: flex;
+	flex-direction: column;
+	/*justify-content: space-around;*/
+	align-items: center;
+	flex-basis: 33.33333%;
+	margin: 0 15px;
+	padding: 35px 0;
+}
+
+.ba-price {
+	font: 700 70px/1 'Miso Bold', Arial, sans-serif;
+	color: #02995b;
+	margin: 0;
+}
+.ba-img {
+	padding: 19px 0 29px 0;
+}
+.ba-flex__block--gold {
+	padding: 70px 0;
+}
+.ba-title {
+	font: 400 56px/1 'Miso', Arial, sans-serif;
+	color: #333333;
+	margin: 0;
+	padding-bottom: 15px;
+}
+.ba-bonus {
+	max-width: 156px;
+	text-align: center;
+	color:  #333333;
+	font-size: 20px;
+	font-weight: 300;
+	margin: 0;
+}
+
+
+
+
+/* Typography */
+img {
+	display: block;
+}
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
